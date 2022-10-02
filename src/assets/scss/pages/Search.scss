@@ -1,0 +1,43 @@
+.search {
+	padding: 50px 0 100px 0;
+	.search-input {
+		padding-bottom: 40px;
+		input {
+			width: 40%;
+		}
+		label {
+			font-size: 20px;
+			font-weight: 500;
+			color: rgba(0, 0, 0, 0.6);
+		}
+		.search-btn {
+			margin-left: 30px;
+			border: none;
+			text-transform: uppercase;
+			width: 121px;
+			height: 48px;
+			margin-top: 10px;
+			background: #6200ee;
+			box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+				0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 50px;
+		}
+	}
+
+	.title {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+		font-size: 40px;
+		margin: 0;
+		padding: 10px 0;
+		background: linear-gradient(180deg, #f21299 0%, #1b02b5 100%);
+		text-align: left !important;
+		padding-left: 30px;
+		color: #fff;
+	}
+	.sort-input {
+		margin-top: 20px;
+		display: flex;
+		justify-content:left;
+	}
+}

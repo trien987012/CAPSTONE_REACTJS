@@ -1,0 +1,130 @@
+.header {
+  &__top {
+    background-color: #000;
+    padding: 10px 24px;
+    justify-content: space-between;
+    .toggle-menu {
+      color: #fff;
+      font-size: 24px;
+      display: none;
+    }
+  }
+
+  &__cart {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  &__menu-top a {
+    text-decoration: none;
+    color: $text-color-white;
+    margin-left: 32px;
+    transition: 0.35s ease-in-out;
+  }
+
+  &__menu-top a:hover {
+    text-decoration: underline;
+  }
+
+  &__menu-bottom {
+    background-color: #fff;
+  }
+
+  &__menu-bottom a {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: $color-text;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 0 20px;
+  }
+
+  &__menu-bottom a::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: 0.35s ease-in-out;
+  }
+
+  &__menu-bottom a:hover {
+    font-weight: 400;
+  }
+
+  &__menu-bottom a:hover::after {
+    width: 100%;
+  }
+
+  .menu__popup {
+    visibility: hidden;
+    padding: 16px;
+    position: fixed;
+    width: 260px;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 10;
+    transform: translateX(-200%);
+    transition: 0.35s ease-in-out;
+    a,
+    &-cart {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      padding: 15px;
+    }
+
+    &-cart {
+      font-size: 26px;
+    }
+  }
+}
+
+.show-menu {
+  visibility: visible !important;
+  transform: translateX(0) !important;
+}
+
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: moveDown 0.6s;
+}
+
+@keyframes moveDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__top {
+      .toggle-menu {
+        display: block;
+      }
+    }
+    &__menu-top,
+    .header__bottom {
+      display: none !important;
+    }
+  }
+
+  .menu-item {
+    border: 0 !important;
+  }
+}

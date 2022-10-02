@@ -1,0 +1,21 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.btn-login{
+    background-color: $color-btn;
+    color:white;
+    &:hover{
+        background-color: $color-btn;
+        color: white;
+    }
+}
+.btn-fb{
+    background-color: $color-btn-fb;
+}
+.a-register a{
+    text-decoration: none;
+}

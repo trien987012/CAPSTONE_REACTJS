@@ -1,0 +1,17 @@
+#form-profile {
+	input::placeholder {
+		color: #333;
+	}
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+
+}
+.profile_title{
+	background-color: $color-btn-fb;
+	text-align: center;
+	color: white;
+}

@@ -1,0 +1,65 @@
+/* =============== Color ============ */
+
+$color-button-1: #F8B653;
+$color-button-2: #E1B067;
+$color-text: #000000;
+$color-text-lighter: #CBC9C9;
+$c1-background-gray: #DEDDDC;
+$c2-background-gray: #F8F8F8;
+$c3-background-gray: #ECECEC;
+$c4-background-gray: #EDF9EE;
+$c5-background-gray: #CCCCCC;
+$color-red: #F50E0E;
+$color-red2: #FC0303;
+$color-submit: #AE18E2;
+$color-green: #1ED90E;
+$color-btn:#6200ee;
+$color-btn-fb:#1877F2;
+
+
+$color-UD:linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%); //UP Down
+$color-addbutton:linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+$text-color-white: #F6F6F6;
+
+$main-font: 'Inter';
+
+// font
+$text-base:16px;
+$text-xl: 24px;
+$text-2xl: 30px;
+//font weigt
+$text-thin:200;
+$text-light:300;
+$text-semi:400;
+$text-semiBold:600; 
+//
+@mixin text($fz,$fw,$c){
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+}
+
+.btn-default{
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #6200ee;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
+      0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: #6200ee;
+    border-radius: 50px;
+
+    padding: 16px 28px;
+
+  
+  
+}
+.btn-default:hover{
+background-color: #6200ee;
+opacity: 0.9;
+}
